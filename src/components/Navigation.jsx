@@ -33,26 +33,26 @@ const Navigation = () => {
   return (
     <>
       <nav 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-white/90 backdrop-blur-sm'
+        className={`fixed top-0 left-0 right-0 z-50 ${
+          isScrolled ? 'bg-white shadow-md' : 'bg-white'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex justify-between items-center">
+        <div className="px-4 py-4 flex items-center justify-between">
           <a 
             href="#hero" 
-            className="text-xl sm:text-2xl font-display font-bold hover:text-accent transition-colors"
+            className="text-lg font-display font-bold text-primary"
             onClick={handleNavClick}
           >
             Portfolio
           </a>
           
           {/* Desktop Navigation */}
-          <div className="hidden md:flex gap-6 lg:gap-8">
+          <div className="hidden md:flex gap-8">
             {navItems.map((item) => (
               <a
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-sm font-medium hover:text-accent transition-colors"
+                className="text-sm font-medium text-primary hover:text-accent transition-colors"
               >
                 {item}
               </a>
@@ -61,19 +61,13 @@ const Navigation = () => {
           
           {/* Mobile Hamburger Button */}
           <button
-            className="md:hidden w-10 h-10 flex flex-col justify-center items-center gap-1.5 flex-shrink-0"
+            className="md:hidden flex flex-col gap-1.5 w-8 h-8 justify-center items-center"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label="Menu"
           >
-            <span 
-              className={`w-6 h-0.5 bg-primary transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}
-            />
-            <span 
-              className={`w-6 h-0.5 bg-primary transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
-            />
-            <span 
-              className={`w-6 h-0.5 bg-primary transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}
-            />
+            <span className={`w-6 h-0.5 bg-primary transition-all ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`} />
+            <span className={`w-6 h-0.5 bg-primary transition-all ${isMobileMenuOpen ? 'opacity-0' : ''}`} />
+            <span className={`w-6 h-0.5 bg-primary transition-all ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`} />
           </button>
         </div>
       </nav>
@@ -81,20 +75,18 @@ const Navigation = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <>
-          {/* Backdrop */}
           <div
-            className="fixed inset-0 bg-black/50 z-40 md:hidden"
+            className="fixed inset-0 bg-black/50 z-40"
             onClick={() => setIsMobileMenuOpen(false)}
           />
           
-          {/* Menu Panel */}
-          <div className="fixed top-0 right-0 bottom-0 w-72 bg-white shadow-2xl z-50 md:hidden overflow-y-auto">
-            <div className="flex flex-col gap-2 p-6 pt-20">
+          <div className="fixed top-0 right-0 bottom-0 w-64 bg-white z-50 shadow-xl">
+            <div className="flex flex-col p-6 pt-20 gap-1">
               {navItems.map((item) => (
                 <a
                   key={item}
                   href={`#${item.toLowerCase()}`}
-                  className="text-lg font-medium hover:text-accent transition-colors py-3 px-4 rounded-lg hover:bg-gray-50"
+                  className="text-base font-medium text-primary hover:text-accent py-3 px-3 rounded-lg hover:bg-gray-50 transition-colors"
                   onClick={handleNavClick}
                 >
                   {item}
