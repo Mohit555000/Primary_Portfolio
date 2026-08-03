@@ -10,14 +10,14 @@ export const personalInfo = {
 // About Section
 export const aboutInfo = {
   description: [
-    "I'm a passionate developer who loves turning ideas into reality through code. With a keen eye for design and a commitment to clean, efficient code, I create digital experiences that make a difference.",
-    "My approach combines technical expertise with creative problem-solving, ensuring every project is not just functional, but exceptional."
+    "Hi, I'm Mohit Gangwani, a Computer Science graduate student at NYU Tandon School of Engineering with a passion for building scalable software and AI-driven applications. Before starting my master's, I worked as an Associate Software Engineer at Saint-Gobain for 2 years, where I developed enterprise integration solutions using technologies such as webMethods, Talend, Kafka, and REST APIs, contributing to real-world business systems.",
+    "My academic and professional journey has strengthened my foundation in software engineering while fueling my interest in artificial intelligence, backend development, distributed systems, and cloud technologies. I enjoy transforming complex problems into reliable, scalable solutions and continuously challenge myself by building projects that combine innovation with practical impact."
   ],
   skills: [
-    { label: 'Frontend', value: 'React, Next.js' },
-    { label: 'Styling', value: 'Tailwind CSS' },
-    { label: 'Animation', value: 'Framer Motion' },
-    { label: 'Backend', value: 'Node.js, Express' }
+    // { label: 'Frontend', value: 'React, Next.js' },
+    // { label: 'Styling', value: 'Tailwind CSS' },
+    // { label: 'Animation', value: 'Framer Motion' },
+    // { label: 'Backend', value: 'Node.js, Express' }
   ]
 };
 
@@ -65,17 +65,17 @@ export const projects = [
 export const education = [
   {
     id: 1,
-    degree: 'Bachelor of Computer Science',
-    institution: 'University Name',
-    year: '2019 - 2023',
-    description: 'Graduated with honors, specializing in web development and software engineering'
+    degree: 'Master of Science in Computer Science',
+    institution: 'NYU Tandon School Of Engineering',
+    year: '2026 - 2028',
+    description: 'Graduate student in Computer Science, focusing on AI, software engineering, and scalable systems.'
   },
   {
     id: 2,
-    degree: 'Full Stack Development Bootcamp',
-    institution: 'Coding Academy',
-    year: '2023',
-    description: 'Intensive program covering modern web technologies and best practices'
+    degree: 'Bachelor of Engineering in Computer Engineering',
+    institution: 'University Of Mumbai',
+    year: '2020 - 2024',
+    description: 'Completed undergraduate studies with a CGPA of 9.14,developing a strong foundation in core computer science principles while gaining hands-on experience through research, AI projects, and software development.'
   }
 ];
 
@@ -98,7 +98,7 @@ export const certifications = [
     year: '2026',
     credentialId: 'pfek7tky3krq',
     skills: ['AI Prompting', 'Artifacts', 'Workspaces','Research Skills','Automation','Model Context Protocol (MCP)'],
-    color: 'from-blue-400 to-blue-600',
+    color: 'from-sky-400 to-blue-600',
     verifyUrl: 'https://verify.skilljar.com/c/pfek7tky3krq'
   },
   {
@@ -108,7 +108,7 @@ export const certifications = [
     year: '2025',
     credentialId: 'C8560102FA729B4EBE85D5D80C739531879AF3545445919334AE0099802023AF',
     skills: ['Artificial Intelligence (AI)', 'Machine Learning (ML)', 'Large Language Models (LLMs)','Generative AI','Oracle Cloud Infrastructure (OCI)','OCI Generative AI Service','Retrieval-Augmented Generation (RAG)','Prompt Engineering','vector search'],
-    color: 'from-green-400 to-teal-500',
+    color: 'from-emerald-400 to-teal-500',
     verifyUrl: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=C8560102FA729B4EBE85D5D80C739531879AF3545445919334AE0099802023AF'
   },
   {
@@ -118,7 +118,7 @@ export const certifications = [
     year: '2025',
     credentialId: '548726881912DCB2037A26BD6B6D4C2E87E52933C102050C3F5215C3338A5EEB',
     skills: ['Artificial Intelligence (AI)', 'Machine Learning', 'Deep Learning','Generative AI','Large Language Models (LLMs)','Natural Language Processing (NLP)','Oracle Cloud Infrastructure (OCI)','OCI AI Services','Cloud Computing','Data Science Basics','Neural Networks','Supervised & Unsupervised Learning','Prompt Engineering','AI Prompting'],
-    color: 'from-emerald-400 to-emerald-600',
+    color: 'from-fuchsia-400 to-pink-600',
     verifyUrl: 'https://catalog-education.oracle.com/ords/certview/sharebadge?id=548726881912DCB2037A26BD6B6D4C2E87E52933C102050C3F5215C3338A5EEB'
   },
   {
@@ -128,8 +128,48 @@ export const certifications = [
     year: '2025',
     credentialId: '786B52C637CDCA1E',
     skills: ['cloud concepts', 'Azure architecture and services', 'Azure management and governance'],
-    color: 'from-lime-500 to-green-600',
+    color: 'from-violet-400 to-indigo-600',
     verifyUrl: 'https://learn.microsoft.com/en-in/users/mohitgangwani-0274/credentials/786b52c637cdca1e?ref=https%3A%2F%2Fwww.linkedin.com%2F'
+  },
+    {
+    id: 6,
+    title: 'Introduction to Big Data with Spark and Hadoop',
+    issuer: 'IBM',
+    year: '2023',
+    credentialId: 'AZ3HQTF66CPV',
+    skills: ['Big Data', 'Data Transformation', 'Hadoop','Distributed Computing',''],
+    color: 'from-amber-400 to-yellow-500',
+    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/AZ3HQTF66CPV'
+  },
+    {
+    id: 7,
+    title: 'Supervised Machine Learning: Regression and Classification',
+    issuer: 'DeepLearning.AI',
+    year: '2023',
+    credentialId: 'MZXVX4V6XK3Y',
+    skills: ['Python', 'Model Training', 'Feature Engineering','Logistic Regression','Classification Algorithms','Algorithms','Supervised Learning','NumPy','Applied Machine Learning','Model Evaluation','Artificial Intelligence','Model Optimization'],
+    color: 'from-cyan-400 to-sky-600',
+    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/MZXVX4V6XK3Y'
+  },
+    {
+    id: 8,
+    title: 'Distributed Computing with Spark SQL',
+    issuer: 'University of California, Davis',
+    year: '2024',
+    credentialId: 'Z2FQP6AW8QZE',
+    skills: ['Machine Learning', 'Azure Databricks', 'Applied Machine Learning','Data Architecture','Distributed Computing','Data Warehousing','Data Manipulation','Data Import/export','Extract, Transform, Load (ETL)','Apache Spark','Big Data','Data Lakes'],
+    color: 'from-rose-400 to-red-500',
+    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/Z2FQP6AW8QZE'
+  },
+    {
+    id: 9,
+    title: 'Generative AI: Introduction and Applications',
+    issuer: 'IBM',
+    year: '2025',
+    credentialId: 'RFM2XDR2U27Z',
+    skills: ['Chagpt', 'Machine Learning (ML)', 'Generative AI','Data Storytelling','AI Literacy'],
+    color: 'from-indigo-500 to-violet-700',
+    verifyUrl: 'https://www.coursera.org/account/accomplishments/verify/RFM2XDR2U27Z?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course'
   }
 ];
 

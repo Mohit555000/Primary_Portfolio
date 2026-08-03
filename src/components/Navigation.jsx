@@ -43,7 +43,7 @@ const Navigation = () => {
             className="text-lg font-display font-bold text-primary"
             onClick={handleNavClick}
           >
-            Portfolio
+            MG
           </a>
           
           {/* Desktop Navigation */}
