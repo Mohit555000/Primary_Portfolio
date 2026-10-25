@@ -25,39 +25,13 @@ export const aboutInfo = {
 export const projects = [
   {
     id: 1,
-    title: 'E-Commerce Platform',
-    description: 'A modern, fully responsive online store with seamless checkout experience',
-    tags: ['React', 'Node.js', 'MongoDB'],
+    title: 'InterviewAI',
+    description: 'Practice role-specific interviews by voice, with adaptive questions based on your resume and job description—and actionable feedback on technical accuracy, clarity, confidence, and problem-solving.',
+    tags: ['React', 'Vite', 'FastAPI', 'LangChain', 'LangGraph', 'OpenAI', 'Qdrant', 'Neo4j'],
     color: 'from-blue-400 to-blue-600',
-    github: 'https://github.com/mohitgangwani/ecommerce-platform',
-    live: 'https://ecommerce-demo.vercel.app'
-  },
-  {
-    id: 2,
-    title: 'Task Management App',
-    description: 'Intuitive project management tool with real-time collaboration features',
-    tags: ['Next.js', 'Firebase', 'Tailwind'],
-    color: 'from-purple-400 to-purple-600',
-    github: 'https://github.com/mohitgangwani/task-manager',
-    live: 'https://task-manager-demo.vercel.app'
-  },
-  {
-    id: 3,
-    title: 'Portfolio Website',
-    description: 'Clean and elegant portfolio showcasing creative work and projects',
-    tags: ['React', 'Framer Motion', 'CSS'],
-    color: 'from-pink-400 to-pink-600',
-    github: 'https://github.com/mohitgangwani/portfolio',
-    live: 'https://mohitgangwani.vercel.app'
-  },
-  {
-    id: 4,
-    title: 'Social Media Dashboard',
-    description: 'Analytics dashboard for tracking social media metrics and engagement',
-    tags: ['Vue.js', 'Chart.js', 'API'],
-    color: 'from-green-400 to-green-600',
-    github: 'https://github.com/mohitgangwani/social-dashboard',
-    live: null
+    video: '/assets/Interview_AI.mp4',
+    github: 'https://github.com/Mohit555000/Interview_Platform_FullStack_AI',
+    live: 'https://interview-platform-full-stack-ai-u3.vercel.app/',
   }
 ];
 
@@ -76,6 +50,46 @@ export const education = [
     institution: 'University Of Mumbai',
     year: '2020 - 2024',
     description: 'Completed undergraduate studies with a CGPA of 9.14,developing a strong foundation in core computer science principles while gaining hands-on experience through research, AI projects, and software development.'
+  }
+];
+
+// Testimonials (LinkedIn-style recommendations — replace with your own quotes)
+export const testimonials = [
+  {
+    id: 1,
+    quote: "I had the opportunity to see Mohit grow as a software engineer at Saint-Gobain. His ability to quickly learn technologies like webMethods, Talend, and Axway, while taking ownership of complex integration work, really stood out. He is a dedicated, adaptable, and dependable engineer who consistently embraces new challenges.",
+    name: 'Harshit Kumar Joshi',
+    role: 'Senior Delivery Manager',
+    company: 'Saint-Gobain',
+    relationship: 'Managed Mohit directly',
+    color: 'from-orange-400 to-orange-600'
+  },
+  {
+    id: 2,
+    quote: "I had the opportunity to work with Mohit on complex SAP, Salesforce, and MDM integration projects. He consistently demonstrated strong technical expertise, practical problem-solving, and the ability to handle production challenges independently. His reliability, adaptability, and collaborative approach made him someone the team could always count on.",
+    name: 'Youssed EL Asraoui',
+    role: 'MDM Project Manager',
+    company: 'Saint-Gobain',
+    relationship: 'Worked on the same team',
+    color: 'from-blue-400 to-blue-600'
+  },
+  {
+    id: 3,
+    quote: "I had the opportunity to work with Mohit on the Talend team at Saint-Gobain, where he quickly stood out for his analytical thinking and problem-solving skills. He took ownership of a complex monitoring solution, translating a business requirement into a practical and reliable technical solution. Mohit is a collaborative and dedicated engineer with a strong ability to turn challenging problems into effective solutions.",
+    name: 'Ajitem Oak',
+    role: 'Technical Lead',
+    company: 'Saint-Gobain',
+    relationship: 'Worked on the different teams',
+    color: 'from-purple-400 to-purple-600'
+  },
+  {
+    id:4,
+    quote:"A fresher into a dependable integration engineer. He quickly picked up webMethods and expanded his skills across MDM, Salesforce, Kafka, and Talend. What stands out most is his curiosity and commitment to continuous learning, especially his exploration of GenAI and data engineering. He is technically strong, easy to work with, and always eager to learn.",
+    name: 'Shekhar Mangonda',
+    role: 'Senior Software Engineer',
+    company: 'Saint-Gobain',
+    relationship: 'Mentor',
+    color: 'from-green-400 to-green-600'
   }
 ];
 
